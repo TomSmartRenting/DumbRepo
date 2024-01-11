@@ -1,13 +1,13 @@
 function isObjectNotDate(value: any): value is Record<string, unknown> {
   return (
-    typeof value === 'object' && value !== null && !(value instanceof Date)
+    typeof value === "object" && value !== null && !(value instanceof Date)
   );
 }
 export function convertIsoDateStrings<T>(data: T): T {
   // Handle the case where data is a string and might be an ISO date
-  if (typeof data === 'string') {
+  if (typeof data === "string") {
     if (/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?Z$/.test(data)) {
-      return DateTime.fromISO(data) as T;
+      return new Date(data) as T;
     }
 
     return data;
