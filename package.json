@@ -1,0 +1,28 @@
+{
+  "name": "dumbrepo",
+  "version": "1.0.0",
+  "description": "Reusable code snippets, libraries, and project starters",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomSmartRenting/DumbRepo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TomSmartRenting/DumbRepo/issues"
+  },
+  "homepage": "https://github.com/TomSmartRenting/DumbRepo#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.47"
+  }
+}
